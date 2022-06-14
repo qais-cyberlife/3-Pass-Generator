@@ -48,27 +48,30 @@ for (i= 0; i < Symbols.length; i ++){
 
 console.log (SymPass)
 
+let allPass = [numPass + LwrPass + UpprPass + SymPass];
+console.log (allPass)
+
 let numPassNC = numPass.join("");
 let LwrPassNC = LwrPass.join("");
 let UpprPassNC = UpprPass.join("");
 let SymPassNC = SymPass.join("");
 
-let allPass = [numPassNC + LwrPassNC + UpprPassNC + SymPassNC];
-console.log (allPass)
+let allPassNC = [numPassNC + LwrPassNC + UpprPassNC + SymPassNC];
+console.log (allPassNC)
 
-function getChar() {
- char = allPass.charAt(1) 
-}
 
 for (i= 0; i < allPass.length; i ++){
   var a = Math.floor(Math.random() * allPass.length);
-  getChar()
-  Pass.push(char);
+  char = allPassNC.charAt(a);
+  Pass.push(allPassNC.charAt(a));
 }
+Pass.join("")
 console.log (Pass)
 
+let text = "HELLO WORLD";
+let letter = text.charAt(0);
 
-
+console.log (letter)
 
 
 // console.log (NumbersArray [i])
