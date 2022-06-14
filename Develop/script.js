@@ -3,13 +3,14 @@ var Numbers = ['0','1','2','3','4','5','6','7','8','9']
 var LowercaseLetters = ['a','b','c','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 var UppercaseLetters = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
 var Symbols = ['`','~','!','@','#','$','%','^','&','*','(',')','_',',','{','}','[',']',':',';','.','<','>','/','?','\','|',']
+all = [Numbers +Lo]
 var generateBtn = document.querySelector("#generate");
 
-var numPass = []
-var LwrPass = []
-var UpprPass = []
-var SymPass = []
-var Pass = []
+var numPass = [];
+var LwrPass = [];
+var UpprPass = [];
+var SymPass = [];
+var Pass = [];
 
 // Step 1 : write functions to all for loops
 // Step 2: make if statements depending on users input
@@ -51,27 +52,27 @@ console.log (SymPass)
 let allPass = [numPass + LwrPass + UpprPass + SymPass];
 console.log (allPass)
 
-let numPassNC = numPass.join("");
-let LwrPassNC = LwrPass.join("");
-let UpprPassNC = UpprPass.join("");
-let SymPassNC = SymPass.join("");
+// let numPassNC = numPass.join("");
+// let LwrPassNC = LwrPass.join("");
+// let UpprPassNC = UpprPass.join("");
+// let SymPassNC = SymPass.join("");
 
-let allPassNC = [numPassNC + LwrPassNC + UpprPassNC + SymPassNC];
-console.log (allPassNC)
+// let allPassNC = [numPassNC + LwrPassNC + UpprPassNC + SymPassNC];
+// console.log (allPassNC)
 
 
 for (i= 0; i < allPass.length; i ++){
-  var a = Math.floor(Math.random() * allPass.length);
-  char = allPassNC.charAt(a);
-  Pass.push(allPassNC.charAt(a));
+  var a = Math.floor(Math.random() * 186);
+  char = allPass[a]
+  Pass.push(char);
 }
-Pass.join("")
+
 console.log (Pass)
 
 let text = "HELLO WORLD";
-let letter = text.charAt(0);
+let letter = text.charAt(3);
 
-console.log (letter)
+console.log(letter)
 
 
 // console.log (NumbersArray [i])
